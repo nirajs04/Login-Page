@@ -1,0 +1,205 @@
+html *
+{
+    margin:0px;
+    padding:0px;
+}
+
+body
+{
+    height:100vh;
+    width:100vw;
+    background-color:rgb(82, 189, 242);
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+}
+
+.outer-box
+{
+    box-shadow:2px 2px 8px 8px rgba(7, 7, 7, 0.5);
+    position:relative;
+    height:80%;
+    width:35%;
+    border-radius:10px;
+}
+
+.upper-box
+{
+    position:absolute;
+    background: rgba(20, 158, 250, 0.565);
+    height:22%;
+    width:100%;
+    border-top-right-radius:10px;
+    border-top-left-radius:10px;
+    display:flex;
+    align-items:center;
+}
+
+h1
+{
+    width:100%;
+    text-align:center;
+    color:rgb(255, 255, 255);
+}
+
+.lower-box
+{
+    background-color:rgb(254, 254, 254);
+    position:absolute;
+        top:22%;
+    width:100%;
+    height:78%;
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius:10px;
+}
+
+.lower-upper
+{
+    position:absolute;
+    width:100%;
+    height:50%;
+    display:grid;
+    grid-template-columns:1fr;
+    grid-template-rows: 30% 30%;
+    grid-auto-rows:auto;
+    gap:5%;
+    align-content:center;
+    justify-items: center;
+}
+
+#email , #password
+{
+    border-width:0.2px;
+    border-color: rgb(211, 209, 209);
+    border-radius:3px;
+    width:70%;
+    font-size:1.5rem;
+    padding:1%;
+}
+
+input::placeholder
+{
+    color:rgb(91, 90, 90);
+    font-family: "PT Serif", serif;
+    font-weight: 400;
+    font-style: normal
+}
+
+input:focus
+{
+    border-color: rgb(20, 158, 250) !important;
+    border-width:1.8px !important;
+    outline:none;
+}
+
+.forget
+{
+    position:absolute;
+        top:85%;
+}
+span
+{
+    font-size:0.7rem;
+    font-weight:bold;
+}
+
+.lower-lower
+{
+    position:absolute;
+        top:50%;
+    width:100%;
+    height:50%;
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius:10px;
+    display:flex;
+    flex-direction:column;
+    gap:20%;
+    justify-content:center;
+    align-items:center;
+}
+
+button
+{
+    border:0.1px solid #149efa90;
+    background-color:#149efad4;
+    color:white;
+    width:72%;
+    height:30%;
+    border-radius:5px;
+    font-size:2rem;
+}
+
+p
+{
+    width:100%;
+    height:30%;
+    text-align:center;
+    font-weight:300;
+}
+
+/*For Small-Mobile Devices. */
+@media(max-width:576px)
+{
+    .outer-box
+    {
+        box-shadow:2px 2px 8px 8px rgba(7, 7, 7, 0.5);
+        position:relative;
+        height:380px;
+        min-width:280px;
+        border-radius:10px;
+    }
+    button
+    {
+        font-size:1.5rem;
+    }
+    #email , #password
+    {
+        font-size:1.1rem;
+    }
+}
+
+/*For large phones and small tablets. */
+@media(max-width:768px) and (min-width:577px)           
+{
+    .outer-box
+    {
+        height:400px;
+        width:45%;
+    }
+    button
+    {
+        font-size:1.5rem;
+    }
+    #email , #password
+    {
+        font-size:1.3rem;
+    }
+}
+
+/*For medium tablets*/
+@media(max-width:1024px) and (min-width:769px)           
+{
+    .outer-box
+    {
+        height:400px;
+        width:40%;
+    }
+    button
+    {
+        font-size:1.5rem;
+    }
+    #email , #password
+    {
+        font-size:1.5rem;
+    }
+}
+
+
+
+
+
+
